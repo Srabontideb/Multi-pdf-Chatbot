@@ -1,18 +1,17 @@
-# --- runtime ---
+# runtime
 streamlit==1.39.0
 python-dotenv==1.0.1
 PyPDF2==3.0.1
 
-# --- langchain v0.2 line ---
-langchain==0.2.16
-langchain-core==0.2.38
-langchain-community==0.2.16
-langchain-text-splitters==0.2.2
+# LangChain stable line (pre-0.2)
+langchain==0.1.16
+langchain-community==0.0.34
 
-# --- HF + embeddings ---
-langchain-huggingface==0.1.0
-huggingface_hub==0.24.6
+# Hugging Face + embeddings
+huggingface_hub==0.23.2
 sentence-transformers==2.7.0
 
-# --- vector store ---
+# Vector store + numpy pin (faiss wheels expect numpy<2)
 faiss-cpu==1.8.0.post1
+numpy==1.26.4
+
