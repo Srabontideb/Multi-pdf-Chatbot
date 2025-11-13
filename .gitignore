@@ -1,0 +1,15 @@
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.env
+*.env
+.env.*
+.streamlit/**/credentials.toml
+.faiss/
+index.faiss
+index.pkl
+.DS_Store
+.ipynb_checkpoints/
+.vscode/
