@@ -1,4 +1,7 @@
 A chatbot where users can upload multiple PDFs and ask questions about their contents — all within an intuitive web interface.
+## 🖼️ App Preview
+![App Screenshot](assets/app_screenshot.png)
+
 
 This system uses:
 - Sentence Transformers (all-MiniLM-L6-v2) for embeddings
