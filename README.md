@@ -17,25 +17,19 @@ It performs semantic retrieval using FAISS vector storage and maintains conversa
 🧩 How It Works
 
 - PDF Upload & Parsing
-
-  Extracts text from each uploaded PDF using PyPDF2.
+    Extracts text from each uploaded PDF using PyPDF2.
 
 - Text Chunking
-
-  Splits text into overlapping chunks (default: 1000 characters, 200 overlap) for contextual retrieval.
+    Splits text into overlapping chunks (default: 1000 characters, 200 overlap) for contextual retrieval.
 
 - Embedding Generation
-
-  Encodes text chunks into vector embeddings using the free model sentence-transformers/all-MiniLM-L6-v2.
+    Encodes text chunks into vector embeddings using the free model sentence-transformers/all-MiniLM-L6-v2.
 
 - Vector Store Creation (FAISS)
-
-  All embeddings are stored in a FAISS index for efficient semantic similarity search.
+    All embeddings are stored in a FAISS index for efficient semantic similarity search.
 
 - Conversational Chain
-
-  When a user asks a question, the app retrieves the most relevant chunks, sends them with the query to the LLM (meta-llama/Llama-3.1-8B-Instruct via Hugging Face), and returns an answer.
+    When a user asks a question, the app retrieves the most relevant chunks, sends them with the query to the LLM (meta-llama/Llama-3.1-8B-Instruct via Hugging Face), and returns an answer.
 
 - Memory & Context
-
-  The ConversationBufferMemory keeps prior chat history for coherent follow-up questions.
+    The ConversationBufferMemory keeps prior chat history for coherent follow-up questions.
