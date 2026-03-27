@@ -1,4 +1,4 @@
-MultiPDF Chat Assistant is a fully local retrieval-augmented generation (RAG) system that transforms static PDF documents into an interactive knowledge base. Users upload one or more PDFs through a Streamlit interface, and the system indexes their content into a FAISS vector store — enabling real-time, context-aware question answering with conversational memory across multiple turns.
+MultiPDF Chatbot is a fully local retrieval-augmented generation (RAG) system that transforms static PDF documents into an interactive knowledge base. Users upload one or more PDFs through a Streamlit interface, and the system indexes their content into a FAISS vector store — enabling real-time, context-aware question answering with conversational memory across multiple turns.
 ## 🖼️ App Preview
 ![App Screenshot](assets/app_screenshot.png)
 
